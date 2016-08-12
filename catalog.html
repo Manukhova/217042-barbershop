@@ -6,9 +6,9 @@
   <title>Barbershop shop</title>
 </head>
 <body>
-  <header  class="sub-header">
-    <div class="container">
-      <nav class="sub-menu">
+  <header class="sub-header">
+    <div class="container clearfix">
+      <nav class="sub-navigation">
         <div class="header-logo">
            <img src="img/logo-item.png" width="111" height="24" alt="Barbershop">
         </div>
@@ -31,25 +31,26 @@
          </ul>
       </nav>
       <div class="user-block">
-         <a class="login" href="http://placehold.it/150x100">Вход</a>
+         <a class="login" href="#">Вход</a>
       </div>
     </div>
   </header>
-  <main>
+  <main class="container">
   <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
   <div class="breadcrumbs">
      <ul>
        <li>
-          <a href="http://placehold.it/150x100">Главная</a>
+          <a href="#">Главная</a>
        </li>
        <li>
-           <a href="http://placehold.it/150x100">Магазин</a>
+           <a href="#">Магазин</a>
        </li>
        <li>
-           <a href="http://placehold.it/150x100">средства для ухода</a>
+           <a href="#">средства для ухода</a>
        </li>
      </ul>
   </div>
+  <div class="clearfix">
   <div class="articles">
     <article class="catalog-item">
       <a href="#">
@@ -99,13 +100,7 @@
       <a class="btn" href="#">Купить</a>
     </article>
   </div>
-  <div class="paginator">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-  </div>
-  <aside>
+  <aside class="sort">
     <div class="producers">
       <h2>Производители:</h2>
       <label for="baxter">Baxter of California</label>
@@ -122,6 +117,7 @@
       <input type="checkbox" id="americancrew" name="producer" checked>
     </div>
     <div class="item-groups">
+      <h2>Группы товаров:</h2>
       <label>
       <input type="radio" value="shaving-item" name="item-groups">
       Бритвенные принадлежности
@@ -137,8 +133,16 @@
     </div>
     <a class="btn" href="#">Показать</a>
   </aside>
-  <footer class="main-footer">
-     <div class="container">
+  </div>
+  <div class="paginator">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+  </div>
+  </main>
+  <footer class="sub-footer">
+     <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -157,6 +161,5 @@
         </section>
       </div>
   </footer>
-</main>
 </body>
 </html>

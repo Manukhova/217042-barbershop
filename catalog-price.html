@@ -6,12 +6,12 @@
   <title>Barbershop shop</title>
 </head>
 <body>
-    <header  class="sub-header">
-      <div class="container">
-        <nav class="sub-menu">
-            <div class="header-logo">
-              <img src="img/logo-item.png" width="111" height="24" alt="Barbershop">
-            </div>
+  <header class="sub-header">
+    <div class="container clearfix">
+      <nav class="sub-navigation">
+        <div class="header-logo">
+           <img src="img/logo-item.png" width="111" height="24" alt="Barbershop">
+        </div>
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -35,7 +35,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="container">
     <h1>Прайс-лист</h1>
       <div class="breadcrumbs">
         <ul>
@@ -50,17 +50,26 @@
       <div class="header">
       <b>Истинно мужская классика</b>
       </div>
-      <article class="price-list">
+      <div class="clearfix">
+      <div class="price-left">
         <section class="recipe">
-          <h2>Мы используем толко лучшие средства</h2>
+          <h2>Мы используем толко лучшие средства:</h2>
           <ul>
             <li>Baxter of California</li>
             <li>Mr Hatty</li>
             <li>Suavecito</li>
             <li>Malin+Goetz</li>
           </ul>
+          </section>
+          <section class="summary">
+            <h2>Несколько слов о нас:</h2>
+            <p>Наша парикмахерская занимается исключительно мужскими стрижками.
+            Стрижка каждого клиента для нас - это уникальная и продуманная
+            до мелочей работа. Мы не работаем на количество, мы делаем на качество.</p>
         </section>
-        <section class="price">
+      </div>
+        <div class="price-right">
+         <section class="price-list">
           <h2>Цены на услуги наших мастеров</h2>
           <table>
             <tr>
@@ -78,17 +87,14 @@
           </table>
         </section>
         <section class="summary">
-          <h2>Несколько слов о нас:</h2>
-          <p>Наша парикмахерская занимается исключительно мужскими стрижками.
-          Стрижка каждого клиента для нас - это уникальная и продуманная
-          до мелочей работа. Мы не работаем на количество, мы делаем на качество.</p>
-          <p>Наша астерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувсивовать себя
+          <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувсивовать себя
           комфортно и свободно!</p>
         </section>
-      </article>
+      </div>
+    </div>
     </main>
-    <footer class="main-footer">
-       <div class="container">
+    <footer class="sub-footer">
+       <div class="container clearfix">
           <section class="footer-contacts">
              Барбершоп «Бородинский»<br>
              Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
