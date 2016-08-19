@@ -2,13 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Barbershop shop</title>
 </head>
 <body>
-  <header class="sub-header">
+  <header class="main-header">
     <div class="container clearfix">
-      <nav class="sub-navigation">
+      <nav class="main-navigation">
         <div class="header-logo">
            <img src="img/logo-item.png" width="111" height="24" alt="Barbershop">
         </div>
@@ -46,11 +48,12 @@
            <a href="#">Магазин</a>
        </li>
        <li>
-           <a href="#">средства для ухода</a>
+           <a href="#">Средства для ухода</a>
        </li>
      </ul>
   </div>
   <div class="clearfix">
+    <div class="catalog-row">
   <div class="articles">
     <article class="catalog-item">
       <a href="#">
@@ -75,6 +78,8 @@
       <b>290 РУБ.</b>
       <a class="btn" href="#">Купить</a>
     </article>
+    <div>
+      <div class="catalog-row">
     <article class="catalog-item">
       <a href="#">
       <img src="img/item4.jpg" width="220" height="165" alt="Глина для укладки волос">
@@ -100,27 +105,28 @@
       <a class="btn" href="#">Купить</a>
     </article>
   </div>
+  </div>
   <aside class="sort">
     <div class="producers">
       <h2>Производители:</h2>
-      <label for="baxter">Baxter of California</label>
       <input type="checkbox" id="baxter" name="producer" checked>
-      <label for="hatty">Mr Hatty</label>
+      <label for="baxter">Baxter of California</label>
       <input type="checkbox" id="hatty" name="producer">
-      <label for="suavecito">Suavecito</label>
+      <label for="hatty">Mr Hatty</label>
       <input type="checkbox" id="suavecito" name="producer" checked>
-      <label for="malingoetz">Malin+Goetz</label>
+      <label for="suavecito">Suavecito</label>
       <input type="checkbox" id="malingoetz" name="producer">
-      <label for="murray">Murray's</label>
+      <label for="malingoetz">Malin+Goetz</label>
       <input type="checkbox" id="murray" name="producer">
-      <label for="americancrew">American Crew</label>
+      <label for="murray">Murray's</label>
       <input type="checkbox" id="americancrew" name="producer" checked>
+      <label for="americancrew">American Crew</label>
     </div>
     <div class="item-groups">
       <h2>Группы товаров:</h2>
       <label>
       <input type="radio" value="shaving-item" name="item-groups">
-      Бритвенные принадлежности
+      Бритвенные<br>принадлежности
       </label>
       <label>
       <input type="radio" value="care-item" name="item-groups">
@@ -136,12 +142,12 @@
   </div>
   <div class="paginator">
     <a href="#">1</a>
-    <a href="#">2</a>
+    <a class="current" href="#">2</a>
     <a href="#">3</a>
     <a href="#">4</a>
   </div>
   </main>
-  <footer class="sub-footer">
+  <footer class="main-footer">
      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>

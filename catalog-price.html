@@ -2,13 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Barbershop shop</title>
 </head>
 <body>
-  <header class="sub-header">
+  <header class="main-header">
     <div class="container clearfix">
-      <nav class="sub-navigation">
+      <nav class="main-navigation">
         <div class="header-logo">
            <img src="img/logo-item.png" width="111" height="24" alt="Barbershop">
         </div>
@@ -69,20 +71,20 @@
         </section>
       </div>
         <div class="price-right">
-         <section class="price-list">
-          <h2>Цены на услуги наших мастеров</h2>
-          <table>
+         <section class="price">
+          <h2>Цены на услуги наших мастеров:</h2>
+          <table class="price-list">
             <tr>
               <td>Стрижка</td>
-              <td>1 500 Р.</td>
+              <td class="price-number">1 500 Р.</td>
             </tr>
             <tr>
               <td>Стрижка бороды</td>
-              <td>500 Р.</td>
+              <td class="price-number">500 Р.</td>
             </tr>
             <tr>
               <td>Накрутка усов</td>
-              <td>350 Р.</td>
+              <td class="price-number">350 Р.</td>
             </tr>
           </table>
         </section>
@@ -93,7 +95,7 @@
       </div>
     </div>
     </main>
-    <footer class="sub-footer">
+    <footer class="main-footer">
        <div class="container clearfix">
           <section class="footer-contacts">
              Барбершоп «Бородинский»<br>
