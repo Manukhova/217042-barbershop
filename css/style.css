@@ -63,6 +63,7 @@ h2 {
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+  margin: 0;
 }
 
 .clearfix::after {
@@ -230,6 +231,18 @@ h2 {
   content: "";
   position: absolute;
   left: 65px;
+  top: 7px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  left: 147px;
   top: 7px;
   display: block;
   width: 8px;
@@ -482,18 +495,18 @@ input[type="radio"] {
 
 input[type="checkbox"] + label {
   display: block;
-  margin: 10px 0;
+  margin: 20px 0;
   line-height: 20px;
-  padding-left: 30px;
+  padding-left: 40px;
   position: relative;
   cursor: pointer;
 }
 
 input[type="radio"] + label {
   display: block;
-  margin: 10px 0;
+  margin: 20px 0;
   line-height: 20px;
-  padding-left: 30px;
+  padding-left: 40px;
   position: relative;
   cursor: pointer;
 }
@@ -559,6 +572,11 @@ input[type="checkbox"]:checked + label::after {
   background-position: -10px -10px;
 }
 
+.producers,
+.item-groups {
+  margin-bottom: 50px;
+}
+
 .catalog-row {
   float: right;
   width: 700px;
@@ -588,16 +606,13 @@ input[type="checkbox"]:checked + label::after {
   text-transform: none;
 }
 
-.catalog-item b {
+.catalog-price b {
+  float: left;
+  width: 58px;
   color: #000000;
   background-color: #e5e5e5;
   padding: 10px 25px;
   line-height: 24px;
-}
-
-.catalog-price b {
-  float: left;
-  width: 58px;
   text-align: center;
 }
 
@@ -625,6 +640,31 @@ input[type="checkbox"]:checked + label::after {
 .catalog-price .item-btn {
   text-transform: uppercase;
   padding: 10px 16px;
+}
+
+.content ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  list-style: none;
+}
+
+.content li {
+  position: relative;
+  padding-left: 20px;
+  display: block;
+}
+
+.content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 
 .paginator {
@@ -656,6 +696,47 @@ input[type="checkbox"]:checked + label::after {
 
 .paginator-btn:hover {
   background-color: #663d15;
+}
+
+.item {
+  font-size: 0;
+}
+
+.item img {
+  margin-right: 20px;
+}
+
+.item img:last-child,
+.item img:first-child {
+  margin-right: 0;
+}
+
+.status {
+  width: 390px;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.status .catalog-price {
+  margin-left: 0;
+  margin-top: 36px;
+  margin-bottom: 60px;
+}
+
+.status-info {
+  margin-bottom: 30px;
+}
+
+.status-info span {
+  float: left;
+}
+
+.status-info .status-presense {
+  margin-right: 175px;
+}
+
+.status-info .status-article {
+  color: #c1c1c0;
 }
 
 .recipe, .summary, .price-list {
