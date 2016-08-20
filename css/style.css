@@ -173,7 +173,6 @@ h2 {
 }
 
 .breadcrumbs {
-  position: relative;
   display: block;
   margin-top: 25px;
   margin-bottom: 55px;
@@ -187,6 +186,7 @@ h2 {
 }
 
 .breadcrumbs li {
+  position: relative;
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
@@ -197,13 +197,14 @@ h2 {
   display: block;
   padding-right: 30px;
   text-decoration: none;
+  color: #000000;
 }
 
-.breadcrumbs a:last-child {
-  color: #aba9a7;
+.breadcrumbs span {
+  color: #c1bebc;
 }
 
-.breadcrumbs a::after {
+.breadcrumbs li::after {
   content: "";
   position: absolute;
   left: 65px;
@@ -213,6 +214,10 @@ h2 {
   height: 8px;
   background-color: #000000;
   transform: rotate(45deg);
+}
+
+.breadcrumbs li:last-child::after{
+  display: none;
 }
 
 .item {
@@ -444,7 +449,7 @@ h2 {
 .sort {
   float:left;
   width:200px;
-  margin-right: 0px;
+  margin-right: 40px;
   color: #000000;
 }
 
@@ -457,21 +462,21 @@ input[type="checkbox"] + label {
   display: block;
   margin: 10px 0;
   line-height: 20px;
-  padding-left: 25px;
+  padding-left: 30px;
   position: relative;
   cursor: pointer;
 }
 
-label input[type="radio"] {
+input[type="radio"] + label {
   display: block;
   margin: 10px 0;
-  line-height: 40px;
-  padding-left: 45px;
+  line-height: 20px;
+  padding-left: 30px;
   position: relative;
   cursor: pointer;
 }
 
-label input[type="radio"]::before {
+input[type="radio"] + label::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -483,7 +488,7 @@ label input[type="radio"]::before {
   left: 0;
 }
 
-label input[type="radio"]:checked::after {
+input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -519,19 +524,19 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .catalog-row {
-  float:right;
+  float: right;
   width: 700px;
 }
 
 .articles {
-  float:right;
-  width:700px;
+  float: right;
+  width: 700px;
   margin-bottom: 45px;
 }
 
 .catalog-item {
-  float:left;
-  width:220px;
+  float: left;
+  width: 220px;
   margin-right: 20px;
   background-color: #ffffff;
   box-shadow: 0 -4px 5px 1px #eae8e5;
@@ -543,6 +548,8 @@ input[type="checkbox"]:checked + label::after {
 
 .catalog-item a {
   text-decoration: none;
+  text-transform: none;
+
 }
 
 .catalog-item b {
@@ -551,13 +558,31 @@ input[type="checkbox"]:checked + label::after {
   padding: 16px 30px;
 }
 
+.catalog-price b {
+  float: left;
+}
+
+.catalog-price a {
+  float: left;
+}
+
+.item-link span {
+  text-transform: uppercase;
+}
+
+.item-link {
+
+  margin-left: 16px;
+}
+
 .paginator {
-  width:260px;
-  margin-left:240px;
+  width: 260px;
+  margin-left: 240px;
   margin-bottom: 50px;
 }
 
-.paginator a {
+.paginator a,
+.paginator div {
     display: inline-block;
     min-width: 23px;
     height: 43px;
@@ -594,7 +619,6 @@ input[type="checkbox"]:checked + label::after {
 
 .price-list .price-number {
   text-align: center;
-
 }
 
 .main-footer {
