@@ -7,11 +7,15 @@ body {
   background-color: #f9f6f3;
   color: #ffffff;
   text-transform: uppercase;
-  /*background: #000000 url("../img/body-bg.jpg") no-repeat center top;*/
-  background-color: #fbf8f5;
 }
 
+.dark {
+  background: #000000 url("../img/body-bg.jpg") no-repeat center top;
+}
 
+.light {
+  background-color: #fbf8f5;
+}
 
 .sprite {
     background-image: url(../img/sprite.png);
@@ -144,6 +148,10 @@ h2 {
   color: #ffffff;
 }
 
+.main-navigation .indicator-price::after {
+  width: 78px;
+}
+
 .user-block {
   float: right;
   max-width: 140px;
@@ -218,9 +226,12 @@ h2 {
 
 .breadcrumbs a {
   display: block;
-  padding-right: 30px;
   text-decoration: none;
   color: #000000;
+}
+
+.breadcrumbs li {
+  padding-right: 30px;
 }
 
 .breadcrumbs span {
@@ -290,7 +301,6 @@ h2 {
   margin-bottom: 120px;
 }
 
-
 .features {
   margin-bottom: 80px;
 }
@@ -339,7 +349,6 @@ h2 {
   color: #000000;
   background: url("../img/index-content-shadow.png") no-repeat center,
   #f8f5f2 url("../img/pattern-white.jpg");
-
 }
 
 .index-content-left {
@@ -667,6 +676,72 @@ input[type="checkbox"]:checked + label::after {
   transform: rotate(45deg);
 }
 
+.header {
+  color: #000000;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-bottom: 70px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  display: block;
+  width: 160px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  left: 780px;
+  top: 14px;
+  display: block;
+  width: 160px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.recipe {
+  width: 240px;
+  color: #000000;
+  margin-bottom: 77px;
+}
+
+.recipe ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.recipe li {
+  position: relative;
+  padding-left: 20px;
+  margin: 24px 0;
+  display: block;
+}
+
+.recipe li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.price-list {
+  margin-top: 30px;
+}
+
 .paginator {
   width: 260px;
   margin-left: 240px;
@@ -717,6 +792,10 @@ input[type="checkbox"]:checked + label::after {
   padding-top: 20px;
 }
 
+.status-btn {
+  color: #000000;
+}
+
 .status .catalog-price {
   margin-left: 0;
   margin-top: 36px;
@@ -739,13 +818,14 @@ input[type="checkbox"]:checked + label::after {
   color: #c1c1c0;
 }
 
-.recipe, .summary, .price-list {
+.summary {
   color: #000000;
 }
 
 .price-list {
     width: 100%;
     border-collapse: collapse;
+    color: #000000;
 }
 
 .price-list td {
